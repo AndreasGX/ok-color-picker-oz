@@ -27,21 +27,23 @@ export function updateSliderTextInput(
 
   const el = sliderTextInputEls[key];
   const currentValue = parseFloat(el.value);
-  const roundedValue = Math.round(value);
+  const decimals = 3
+  const displayValue = Number(value).toFixed(decimals);
+  const numericValue = parseFloat(displayValue);
 
-  if (valueIsNotWithinRange(roundedValue, key)) {
+  if (valueIsNotWithinRange(numericValue, key)) {
     el.value = useSymbol
       ? `${state.currentSliders[key].value}${state.currentSliders[key].symbol}`
       : String(state.currentSliders[key].value);
     return;
   }
 
-  if (currentValue !== value || forceUpdate) {
+  if (currentValue !== numericValue || forceUpdate) {
     el.value = useSymbol
-      ? `${roundedValue}${state.currentSliders[key].symbol}`
-      : String(roundedValue);
+      ? `${displayValue}${state.currentSliders[key].symbol}`
+      : String(displayValue);
     if (!skipUpdateSlider) {
-      updateSliderRangeInput(roundedValue, key);
+      updateSliderRangeInput(numericValue, key);
     }
   }
 }
