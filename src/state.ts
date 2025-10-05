@@ -35,68 +35,68 @@ const State: StateType = {
       {
         id: "Hue",
         min: 0,
-        max: 360,
-        unit: 1,
-        value: 211,
+        max: 504,
+        unit: 0.001,
+        value: 0,
         symbol: ""
       },
       {
         id: "Saturation",
         min: 0,
-        max: 100,
-        unit: 1,
-        value: 93,
-        symbol: "%"
+        max: 504,
+        unit: 0.001,
+        value: 0,
+        symbol: ""
       },
       {
         id: "Value",
         min: 0,
-        max: 100,
-        unit: 1,
-        value: 58,
-        symbol: "%"
+        max: 504,
+        unit: 0.001,
+        value: 252,
+        symbol: ""
       },
       {
         id: "Alpha",
         min: 0,
-        max: 100,
+        max: 255,
         unit: 1,
-        value: 100,
-        symbol: "%"
+        value: 255,
+        symbol: ""
       }
     ],
     OKHSL: [
       {
         id: "Hue",
         min: 0,
-        max: 360,
-        unit: 1,
-        value: 211,
+        max: 504,
+        unit: 0.001,
+        value: 0,
         symbol: ""
       },
       {
         id: "Saturation",
         min: 0,
-        max: 100,
-        unit: 1,
-        value: 91,
-        symbol: "%"
+        max: 504,
+        unit: 0.001,
+        value: 0,
+        symbol: ""
       },
       {
         id: "Lightness",
         min: 0,
-        max: 100,
-        unit: 1,
-        value: 47,
-        symbol: "%"
+        max: 504,
+        unit: 0.001,
+        value: 252,
+        symbol: ""
       },
       {
         id: "Alpha",
         min: 0,
-        max: 100,
+        max: 255,
         unit: 1,
-        value: 100,
-        symbol: "%"
+        value: 255,
+        symbol: ""
       }
     ]
   },
